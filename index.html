@@ -105,7 +105,7 @@ header{background:var(--head);border-bottom:1px solid var(--line);padding:10px 1
 mark{background:var(--mark);color:inherit;border-radius:3px}
 .col{min-width:0;max-width:calc(var(--u)*720.6)}
 .empty{text-align:center;color:var(--sub);padding:50px 0}
-#bar{background:var(--inputbar);padding:10px 14px 12px;display:flex}
+#bar{display:none}
 #pill{flex:1;display:flex;align-items:center;background:var(--pill);border:1px solid var(--line);border-radius:26px;padding:4px 8px 4px 18px}
 #txt{flex:1;border:0;background:none;font:inherit;font-size:16px;color:var(--text);padding:10px 0;outline:none;min-width:0}
 #menu{display:none;position:absolute;right:10px;top:62px;background:var(--bubble);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.22);padding:6px;z-index:5;min-width:140px}
@@ -330,9 +330,9 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:"Noto Sans KR",-a
 .nm{display:flex;align-items:center;gap:calc(var(--u)*10.5);font-weight:700;font-size:calc(var(--u)*44);line-height:1}
 .bar{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;background:var(--bg)}.dots{display:flex;align-items:center;justify-content:center;width:37px;height:37px;margin:calc(10px + env(safe-area-inset-top,0px)) -4px 10px 0}.dots svg{width:23px;height:23px;display:block;fill:var(--fg)}
 .nm svg{width:calc(var(--u)*46);height:calc(var(--u)*46);display:block;position:relative;top:2px}
-.pic{margin-top:calc(var(--u)*49);width:100%;aspect-ratio:1/1;background:var(--ph);border-radius:calc(var(--u)*40);overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:zoom-in}
-.pic video{display:block;max-width:100%;max-height:100%;background:#000}
-.pic img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+.pic{margin-top:calc(var(--u)*49);width:100%;aspect-ratio:1/1;background:var(--ph);border-radius:calc(var(--u)*40);overflow:hidden;position:relative;cursor:zoom-in}
+.pic video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;background:#000}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
 .txt{margin-top:calc(var(--u)*49);font-size:calc(var(--u)*46.6);line-height:calc(var(--u)*77);word-break:break-all;word-spacing:-.08em;white-space:pre-wrap}
 .pic+.txt{margin-top:calc(var(--u)*40)}
 .meta{margin-top:calc(var(--u)*42);font-size:calc(var(--u)*36.8);color:var(--sub);line-height:1.3}
